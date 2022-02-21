@@ -21,7 +21,7 @@ export default function Login() {
     if (loginWasSuccessful) {
       history.replace(from);
     } else {
-      throw new Error('Login has failed. Try Again');
+      setError('Login has failed. Try Again');
     }
 
     // TODO: If login was unsuccessful, set an error with a message
